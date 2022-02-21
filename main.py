@@ -24,9 +24,9 @@ leonardo.goto(-100,-20)
 michelangelo.goto(-100,20)
 
 
-for number in range(0,11):
-  leonardo.forward(random.randrange(0,11))
-  michelangelo.forward(random.randrange(0,11)) 
+for number in range(0,10):
+  leonardo.forward(random.randrange(0,10))
+  michelangelo.forward(random.randrange(0,10)) 
 
 leonardo.goto(-100,-20)
 michelangelo.goto(-100,20)
