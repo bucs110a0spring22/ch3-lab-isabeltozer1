@@ -17,10 +17,30 @@ leonardo.up()
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
 
-## 5. your code goes here
+leonardo.forward(random.randrange(1,101))
+michelangelo.forward(random.randrange(1,101))
+
+leonardo.goto(-100,-20)
+michelangelo.goto(-100,20)
 
 
-# Part B - complete part B here
+for number in range(0,11):
+  leonardo.forward(random.randrange(0,11))
+  michelangelo.forward(random.randrange(0,11)) 
 
+leonardo.goto(-100,-20)
+michelangelo.goto(-100,20)
+
+michelangelo.down()
+shape_sides=(3,4,6,9,12)
+for side in shape_sides:
+ angle=360/side
+ length=50
+for i in range(side):
+   michelangelo.down()
+   michelangelo.right(angle)
+   michelangelo.forward(length)
+   michelangelo.up()
+michelangelo.clear()
 
 window.exitonclick()
